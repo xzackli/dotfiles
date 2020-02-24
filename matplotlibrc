@@ -1,0 +1,69 @@
+backend: Qt5Agg
+
+# fonty stuffs
+font.family: serif
+font.serif : Source Serif Pro
+font.size: 18
+mathtext.fontset: cm
+
+text.usetex: False
+# text.latex.preamble: \usepackage{amsmath}
+
+# styles
+lines.linestyle        : -       # solid line
+lines.color            : 666666    # has no affect on plot(); see axes.color_cycle
+lines.marker           : .    # the default marker
+lines.markeredgewidth  : 0.     # the line width around the marker symbol
+lines.markersize       : 8           # markersize, in points
+patch.facecolor        : 666666
+patch.edgecolor        : none
+
+# figure and axes
+figure.figsize: 6, 5
+figure.facecolor: w
+figure.edgecolor: ffffff
+
+figure.dpi: 100
+savefig.dpi: 100
+
+axes.titlepad       : 12.0
+axes.labelpad       : 6.0     ## space between label and axis
+
+axes.facecolor: ffffff
+axes.edgecolor: 333333
+axes.formatter.limits: -7, 10  # scientific notation limits
+axes.titlesize: 26
+axes.labelsize: 22
+xtick.labelsize: 18
+ytick.labelsize: 18
+
+scatter.marker : .
+
+# legend
+legend.fontsize: 18
+legend.frameon: False
+
+# ticks
+xtick.major.width: 1.
+ytick.major.width: 1.
+xtick.color: 222222
+ytick.color: 222222
+xtick.direction: in
+ytick.direction: in
+xtick.major.size: 8      # major tick size in points
+xtick.minor.size: 4      # minor tick size in points
+ytick.major.size: 8      # major tick size in points
+ytick.minor.size: 4      # minor tick size in points
+
+xtick.top: True
+ytick.right: True
+
+# the grid
+grid.color: cccccc   # grid color
+grid.linestyle: -
+grid.linewidth: 0.75     # in points
+
+# seaborn colorblind palette
+axes.prop_cycle: cycler('color', ["000000", "0173B2", "DE8F05", "029E73", "D55E00", "CC78BC", "CA9161", "FBAFE4", "949494", "ECE133", "56B4E9"])
+
+image.cmap: magma
