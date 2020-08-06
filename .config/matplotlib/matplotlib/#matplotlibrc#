@@ -1,13 +1,19 @@
 backend: Qt5Agg
 
-# fonty stuffs
-font.family: serif
-font.serif : Source Serif Pro
+
+font.family : Cochineal
 font.size: 18
-mathtext.fontset: cm
+# font.weight: medium
+#font.family: Latin Modern Roman
+mathtext.fontset:cm
+#mathtext.fontset: custom
+#mathtext.rm: Cochineal
+#mathtext.it: Cochineal:italic
+#mathtext.bf: Cochineal:bold
+#mathtext.cursive: Cochineal
 
 text.usetex: False
-# text.latex.preamble: \usepackage{amsmath}
+
 
 # styles
 lines.linestyle        : -       # solid line
@@ -19,15 +25,17 @@ patch.facecolor        : 666666
 patch.edgecolor        : none
 
 # figure and axes
-figure.figsize: 6, 5
+figure.figsize: 8, 4.94427191
 figure.facecolor: w
 figure.edgecolor: ffffff
 
-figure.dpi: 100
-savefig.dpi: 100
+figure.dpi: 200
+savefig.dpi: 200
 
-axes.titlepad       : 12.0
-axes.labelpad       : 6.0     ## space between label and axis
+# line widths
+lines.linewidth   : 2    ## line width in points
+patch.linewidth   : 2
+
 
 axes.facecolor: ffffff
 axes.edgecolor: 333333
@@ -38,6 +46,7 @@ xtick.labelsize: 18
 ytick.labelsize: 18
 
 scatter.marker : .
+
 
 # legend
 legend.fontsize: 18
@@ -64,6 +73,6 @@ grid.linestyle: -
 grid.linewidth: 0.75     # in points
 
 # seaborn colorblind palette
-axes.prop_cycle: cycler('color', ["000000", "0173B2", "DE8F05", "029E73", "D55E00", "CC78BC", "CA9161", "FBAFE4", "949494", "ECE133", "56B4E9"])
+axes.prop_cycle: cycler('color', [])
 
 image.cmap: magma
